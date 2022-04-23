@@ -1,0 +1,14 @@
+# command to generate ssh-keys
+ssh-keygen -t rsa -b 4096 -C your_email@example.com
+
+ssh-keygen -t rsa -b 4096 -C 
+# command to get your public ssh keys
+cat ~/.ssh/id_rsa.pub
+
+# on your github, do the follwing
+go to settings
+go to ssh-keys
+give a unique name to the ssh key and paste the public key in the required folder
+save
+it will ask for your password
+put in your passwordyiu should get a conf email that it is updated
