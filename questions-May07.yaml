@@ -1,0 +1,38 @@
+# Google Cloud Plartform GCP
+  What is GCP:
+  cloud: simply virtualization in a remote location
+  suite: stack or many applications or services offered as a package
+  AI: Artificial intelligence
+    GCP is a public cloud vendor that offers a suite of computing services to do everything from data management to delivering web and video over the web to AI and machine learning tools. Customers are able to access computer resources housed in Google's data centers around the world for free or on a pay-per-use basis
+
+ !
+
+What do we do need to connect to a server
+    Two types of  hosts: server & client
+        What is a server: as long as I am sharing and giving reousrces or services to requestors, I am the server
+        What is a client: as long as I am receiving or requesting for resources or services, I am a client
+          You have the docker desktop on your comouter
+          Inside the docker desktop, you have Containers, which are mini computers
+
+          Who is the server: your computer
+          Who is client: the containers
+          Example:
+          The computer is sharing memory & storage
+          The containers are requesting memory and storage
+  To connect to computer: username & passowrd
+  To connect to github: username & passowrd
+  To connect to Github via cli: ssh pubkey & private key
+
+  Two main methods to connect: (username & password), ssh keys, tokens
+
+  How do i create a server in GCP
+  What does it take for one to know a file type
+  How permissions are beign granted
+  How did it come about the default permnissions for both files & dirs
+  What is the default umax value
+  How to assign or change permission to a file
+  How to become a root user
+  More About the server in terms of networking
+
+
+
