@@ -5,8 +5,6 @@
   AI: Artificial intelligence
     GCP is a public cloud vendor that offers a suite of computing services to do everything from data management to delivering web and video over the web to AI and machine learning tools. Customers are able to access computer resources housed in Google's data centers around the world for free or on a pay-per-use basis
 
- !
-
 What do we do need to connect to a server
     Two types of  hosts: server & client
         What is a server: as long as I am sharing and giving reousrces or services to requestors, I am the server
@@ -26,13 +24,43 @@ What do we do need to connect to a server
   Two main methods to connect: (username & password), ssh keys, tokens
 
   How do i create a server in GCP
-  What does it take for one to know a file type
+   We will get to this:
+
+  What does it take for one to know a file type:
+    We can identify the file type via the extention
+      example: file1.txt file1.yaml
+      file1.pdf, file1.doc file1.exe
+
   How permissions are beign granted
-  How did it come about the default permnissions for both files & dirs
-  What is the default umax value
+    chmod: the command 
+    option calue: r w x = 4 2 1 = 7
+      example: 
+        rw-r--r-- = 644
+        rwxr-xr-x  = 755
+        711 = rwx--x--x
+        600 = rw-------
+        744 = rwxr--r--
+    user-group-other = xxx-xxx-xxx 
+    example:
+      chmod 755 file1
+  
+  How did it come about the default permnissions for both files & directories: its a story that the creators decided
+
+  What is the default umask value: 
+    # https://linuxize.com/post/umask-command-in-linux/#:~:text=the%20chown%20command.-,Understanding%20umask,user%2C%20group%2C%20and%20others.
+
+    By default, on Linux systems, the default creation permissions are 666 for files, which gives read and write permission to user, group, and others, and to 777 for directories, which means read, write and execute permission to user, group, and others
+
   How to assign or change permission to a file
+      example:
+      chmod 755 file1
+
   How to become a root user
-  More About the server in terms of networking
+    you need to use sudo  command
+    Example:
+      sudo apt install nano
+      sudo yum install nano
+    
 
 
 
