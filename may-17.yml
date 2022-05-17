@@ -1,0 +1,56 @@
+! Topic: Command Line Termonal Editors
+
+  There are two common editors
+    * nano
+    * vim/vi
+
+
+# vim --> there are two mode
+  command mode :
+    use <i> to change to insert mode
+  insert mode :
+    use <esc> to change back to command mode
+
+  Tasks: Create, edit, update or modify && save files using vim
+
+  & create
+      To create a file a vim, execute the following Command
+        vi <nameofile>
+        vi nameofile
+        vi cookie-ceerial
+        Example: create a file called today
+        vi today
+
+
+  & edit
+  - The first thing to do when you want to edit a file is <i>
+      - Put the content into the file
+    - to change back to command mode, I will press the <esc>
+
+  & save
+    - To save the content of the file
+      * Make sure you are in command mode
+      * Press the <:>
+      * Quite && Save type <wq> && <ENTER> to save the conent and quit
+        [ w = write, q = quit ]
+      * Quit without saving <q!>
+
+# Nano
+  & create
+    To create a file using nano, execute the following Command
+      nano <nameofile>
+      nano cypro
+
+  & edit
+  !!! There is no mode, be very careful, you just type typing
+
+
+  & save
+  - To save the content of the file
+    * Quite && Save type <ctrl + o> && <ENTER> as well as <ctrl + x> && <ENTER> to save the content and quit
+
+    * Quit without saving
+      <ctrl + x> && <ENTER> 
+
+!!! Question
+
