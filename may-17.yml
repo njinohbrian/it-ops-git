@@ -1,4 +1,4 @@
-! Topic: Command Line Termonal Editors
+! Topic: Command Line Terminal Editors
 
   There are two common editors
     * nano
@@ -14,7 +14,7 @@
   Tasks: Create, edit, update or modify && save files using vim
 
   & create
-      To create a file a vim, execute the following Command
+      To create a file vim, execute the following Command
         vi <nameofile>
         vi nameofile
         vi cookie-ceerial
