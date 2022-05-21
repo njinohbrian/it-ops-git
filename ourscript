@@ -1,0 +1,30 @@
+# Ignore the change  user or shell command
+# su -
+
+# This step will install sudo if t is not installed
+apt-get install sudo -y
+
+# This step  updates and upgrade the system
+sudo apt update && sudo apt upgrade -y
+
+clear
+sleep 2
+
+# list all the files in the directory
+ls -l
+
+# stop for  5 seconds, so we can see the output
+sleep 5
+
+echo How many files did you see
+
+touch fiel1 file2 file3 file4 file5
+
+# list all the files in the directory again
+ls -l
+
+# stop for  10  seconds, so we can see the output
+sleep 5
+
+# clear and exit
+clear
