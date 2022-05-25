@@ -1,0 +1,173 @@
+# Today is May 24, 2022
+
+# We are going to be talking about variables 
+# && Positiona paramenters
+
+! What is a variable
+  A variable is simple any information that is stored in another word and is used in bash
+
+    Tasks: create a variable called name & store your full names inside
+      name="Cookie Rosa"
+
+    Why did I not use specify/call Cookie Rosa in the script or in the code/ why did i decide to use a variable
+      * I can use it anywhere I want, i will just call the variable 
+        What does it help you achie
+          ==> cleaner code or script
+          ==> make you efficient
+
+! Most command type of variables
+
+  global variables --> called be used anywhere inside a script
+  local variables --> can be used anywhere inside a funtion
+  system variables --> can be used anywhere inside the system
+
+  SCRIPT: IT IS A SET OF LINUX COMMANDS IN A FILE
+
+  a repository: is a storage location
+  sudo: enables the current user to assume admin/root priviledges 
+  apt: is the package managet for debian/ubuntu repositories
+  update: update the package repository that I have in my local
+  &&: a symbol that enables the system to run the first command first then; the next command after the sysbols second
+  install: the action the package manager should take
+  -y : auto approve everthing
+
+
+  # bash install-vim.sh
+  bash is the shell interpreter
+  install.sh is a file or a script 
+
+  What is the command to make the file executable by only the user: chmod 700 <name-of-file>
+
+    chmod 700 variable.sh
+
+    To run the script, you can do any of the following
+        # ./variables.sh
+        #sh variables.sh
+        #bash variables.sh
+
+  Task for A Mira: tell me the command to create a variable that creates two files called "today" and "tomorrow"
+
+    touch today tomorrow
+    study="touch today tomorrow"
+
+# postional paramenters
+The position relative to the cursor starting from zero 
+
+  - represented by 
+    ** $1 for positiona parameter one
+    ** $2 for positiona parameter two  
+    ** $3 for positiona parameter three
+    ** $7 for positiona parameter seven
+
+    ls
+
+    t="ls"
+
+    use a variable to perform an action, append it with the bash symbol == $
+    $t
+
+
+    The default variable is the global varianble
+
+    but when a local varaible is created, it becomes the default for that session
+
+
+
+      local variable:
+        song="African Queen"
+      global variable:
+        export name="Tse F. Clinton"
+        export song="Our Father"
+
+      make varibale persist:
+        to make a variable persist, we need to create or add a global variable into the .bashrc file
+        Step1: edit the bashrc file
+        sudo nano ~/.bashrc
+
+        Step2: naviate to a new line, make a commend, then put global variables
+            # Creating my own variables
+            export name="Tse F. Clinton"
+            export song="True Story"
+            export artist="Timaya"
+            export hometown="Fiango"
+
+        Step3: save the file and exit
+        ctrl + x
+        type y and press enter
+        Step 4: log out and login for it to reload as an amateur
+
+        as a professional, you can reload the shell with this command
+
+        source ~/.bashrc
+
+
+
+
+
+
+    echo "The numbers you gave me are $4 $0 $1 $4 $7"
+
+    The numbers you gave me are 78 ./variables.sh 47 78 69
+    The numbers you gave me are 78 ./variables.sh 47 78 69
+
+    The numbers you gave me are
+
+### Script 1
+install-vim.sh
+  sudo apt update && sudo apt install vim -y
+
+To run it
+bash install-vim.sh
+
+
+############# Script 2
+
+variables.sh
+  #!/bin/bash
+
+  # The next line, creates a variable, that stores my full names
+
+  #identity="Etas Uni
+
+  echo "The numbers you gave me are $4 $0 $1 $4 $7"
+
+  # Print the content of this echo command to standard  output
+  # echo "I am from $identity, I am hate Linux commands"
+
+  # Making the script sleep for 2 seconds with the sleep command  and
+  # Giving it a value of 2 seconds
+  # sleep 2
+
+  # Print the content of this echo command to standard  output
+  #echo "Why am I styudying linux commands in a summer afternoon"
+
+
+TO RUN IT
+chmod +x variables.sh
+
+./variables.sh
+
+#### Script 3
+file2.sh
+#!/bin/bash
+
+# define a local variable, song
+# song="African Queen"
+age="30"
+
+# use the global variable already defined
+echo "My name is $name"
+
+echo "My favourite song is $song"
+
+echo "I am $age years old"
+
+TO RUN IT
+chmod +x file2.sh
+
+./file2.sh
+
+
+
+
+
