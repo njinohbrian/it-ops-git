@@ -72,7 +72,7 @@ The position relative to the cursor starting from zero
     but when a local varaible is created, it becomes the default for that session
 
 
-    
+
       local variable:
         song="African Queen"
       global variable:
@@ -112,8 +112,60 @@ The position relative to the cursor starting from zero
 
     The numbers you gave me are
 
+### Script 1
+install-vim.sh
+  sudo apt update && sudo apt install vim -y
+
+To run it
+bash install-vim.sh
 
 
+############# Script 2
+
+variables.sh
+  #!/bin/bash
+
+  # The next line, creates a variable, that stores my full names
+
+  #identity="Etas Uni
+
+  echo "The numbers you gave me are $4 $0 $1 $4 $7"
+
+  # Print the content of this echo command to standard  output
+  # echo "I am from $identity, I am hate Linux commands"
+
+  # Making the script sleep for 2 seconds with the sleep command  and
+  # Giving it a value of 2 seconds
+  # sleep 2
+
+  # Print the content of this echo command to standard  output
+  #echo "Why am I styudying linux commands in a summer afternoon"
+
+
+TO RUN IT
+chmod +x variables.sh
+
+./variables.sh
+
+#### Script 3
+file2.sh
+#!/bin/bash
+
+# define a local variable, song
+# song="African Queen"
+age="30"
+
+# use the global variable already defined
+echo "My name is $name"
+
+echo "My favourite song is $song"
+
+echo "I am $age years old"
+
+TO RUN IT
+chmod +x file2.sh
+
+./file2.sh
 
 
 
