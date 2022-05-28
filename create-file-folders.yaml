@@ -1,0 +1,36 @@
+# May 28, 2021
+# Practise creating files, directories, 
+# putting content into the file & giving them execute permissions
+
+# Command to create a file
+  touch <file-name>
+  Task: create a file called linuxfile1
+    touch linuxfile1
+  Task: Create 5 files at onces, give them the names file1, file2, ... file5
+    touch file1 file2 file3 file4 file5
+
+# Command to create a directory
+  mkdir <dir-name>
+  Tasks: create a directory called today
+    mkdir today
+  ! What is a parent directory: a parent directory will represent a root directory to the sub directories
+    example: /home/brio/today --> the parent directory of today is /brio
+  Task: create a parent directory today, && 2 child directories tomorrow, yesterday
+  mkdir -p /today/tomorrow
+  mkdir -p /today/yesterday
+
+
+# How to delete or remove a directory
+rm -rf <dir-name>
+  rm = is the remove or deleteete a file
+  r = is for recursively --> delete all the child directories tomorrow
+  f = to use force --> do not stop to ask me for input
+
+# Command to move a file via the termianl
+cp -r <filepath/filename> <new-file-location>
+
+
+
+# Question!
+What does this command do: rm Brian/scarborough/file4
+  this command will delete file4 if it exists
