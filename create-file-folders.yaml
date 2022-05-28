@@ -28,10 +28,11 @@ rm -rf <dir-name>
 
 # Command to move a file via the termianl
 cp -r <filepath/filename> <new-file-location>
-Tasks: copy the new file, into a local repo that is tracked by git
-cp -r ./create-file-folders.yaml /Users/brio/Documents/tmp/it-ops-git
+Tasks: copy the new file, into a local repo that is tracked by git using the relative file path
+  cp -r ./create-file-folders.yaml /Users/brio/Documents/tmp/it-ops-git
 
-
+Tasks: copy the new file, into a local repo that is tracked by git using the absolute file path
+  cp -r ~/Documents/tmp/create-file-folders.yaml /Users/brio/Documents/tmp/it-ops-git
 
 # Question!
 What does this command do: rm Brian/scarborough/file4
