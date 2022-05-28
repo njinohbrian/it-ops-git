@@ -28,6 +28,8 @@ rm -rf <dir-name>
 
 # Command to move a file via the termianl
 cp -r <filepath/filename> <new-file-location>
+Tasks: copy the new file, into a local repo that is tracked by git
+cp -r ./create-file-folders.yaml /Users/brio/Documents/tmp/it-ops-git
 
 
 
